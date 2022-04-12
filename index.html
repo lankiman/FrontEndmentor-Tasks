@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+  </head>
+  <body>
+    <main class="pageContents">
+      <header class="CardHeadings">
+        <div class="headingtext">
+          <p>Social Media Dashboard</p>
+          <p class="totalFolow">Total Followers: 23,004</p>
+        </div>
+        <div class="theme-switch-wrapper">
+          <p id="switchText" class="switchText">Dark Mode</p>
+          <label id="theme-switch" class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider"></div>
+          </label>
+        </div>
+      </header>
+      <div class="FirstCardGroup">
+        <div id="FacebookCard" class="ViewCards">
+          <div class="hashtag_icon">
+            <img
+              class="icons"
+              src="images/icon-facebook.svg"
+              alt="facebook_icon"
+            />
+            <p class="Hashtags">@nathanf</p>
+          </div>
+          <p class="folowerNumbers">1987</p>
+          <p class="followersText">FOLLOWERS</p>
+          <div class="cardFooter">
+            <img class="arrow" src="images/icon-up.svg" alt="up_arrow" />
+            <p class="recentStats">12 Today</p>
+          </div>
+        </div>
+        <div id="TwitterCard" class="ViewCards">
+          <div class="hashtag_icon">
+            <img
+              class="icons"
+              src="images/icon-twitter.svg"
+              alt="twiter_icon"
+            />
+            <p class="Hashtags">@nathanf</p>
+          </div>
+          <p class="folowerNumbers">1044</p>
+          <p class="followersText">FOLLOWERS</p>
+          <div class="cardFooter">
+            <img class="arrow" src="images/icon-up.svg" alt="up_arrow" />
+            <p class="recentStats">99 Today</p>
+          </div>
+        </div>
+        <div class="ViewCards" id="InstagramCard">
+          <div class="hashtag_icon">
+            <img
+              class="icons"
+              src="images/icon-instagram.svg"
+              alt="instagram_icon"
+            />
+            <p class="Hashtags">@realnathanf</p>
+          </div>
+          <p class="folowerNumbers">11k</p>
+          <p class="followersText">FOLLOWERS</p>
+          <div class="cardFooter">
+            <img class="arrow" src="images/icon-up.svg" alt="up_arrow" />
+            <p class="recentStats">1099 Today</p>
+          </div>
+        </div>
+        <div id="YoutubeCard" class="ViewCards">
+          <div class="hashtag_icon">
+            <img
+              class="icons"
+              src="images/icon-youtube.svg"
+              alt="youtube_icon"
+            />
+            <p class="Hashtags">Nathan F.</p>
+          </div>
+          <p class="folowerNumbers">11k</p>
+          <p class="followersText">SUBSCRIBERS</p>
+          <div class="cardFooter">
+            <img class="arrow" src="images/icon-down.svg" alt="up_arrow" />
+            <p id="recentyoutube" class="recentStats">144 Today</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
