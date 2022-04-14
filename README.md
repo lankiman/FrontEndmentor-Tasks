@@ -12,7 +12,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://lankiman.github.io/FrontEndmentor-Tasks/
+- Live Site URL: (https://lankiman.github.io/FrontEndmentor-Tasks/)
 
 ## My process
 

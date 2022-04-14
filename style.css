@@ -251,3 +251,17 @@ input:checked + .slider:before {
     margin-top: 510px;
   }
 }
+@media only screen and (min-height: 400px) {
+  .coder1 {
+    margin-top: 230px;
+  }
+  .overviewGrid {
+    margin-top: -60px;
+  }
+  .overviewcards {
+    margin-top: -85px;
+  }
+  .pageContents {
+    margin-top: 10px;
+  }
+}
