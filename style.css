@@ -165,7 +165,7 @@ input:checked + .slider:before {
   }
   .coder1 {
     display: block;
-    margin-top: 550px;
+    margin-top: 500px;
     margin-bottom: 10px;
     padding-bottom: 20px;
   }
@@ -189,7 +189,7 @@ input:checked + .slider:before {
   }
   .FirstCard {
     width: 100%;
-    margin-bottom: -70px;
+    margin-bottom: -20px;
   }
   .FirstCardGroup {
     display: flex;
@@ -232,8 +232,8 @@ input:checked + .slider:before {
   }
   .overviewcards {
     display: block;
-    height: 90%;
-    margin-top: 200px;
+    height: 100%;
+    margin-top: -20px;
   }
   .cardstyle {
     margin-bottom: 10px;
@@ -282,6 +282,18 @@ input:checked + .slider:before {
   }
   .coder1 {
     margin-top: 500px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .FirstCard {
+    width: 100%;
+    margin-bottom: -100px;
+  }
+  .overviewGrid {
+    margin-bottom: 130px;
+  }
+  .coder1 {
+    margin-top: 350px;
   }
 }
 @media only screen and (max-width: 480px) {
