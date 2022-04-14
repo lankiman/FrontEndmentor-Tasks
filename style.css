@@ -143,7 +143,7 @@ input:checked + .slider:before {
   transform: translateX(16px);
 }
 .coder {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .coder1 {
   display: none;
@@ -165,7 +165,7 @@ input:checked + .slider:before {
   }
   .coder1 {
     display: block;
-    margin-top: 520px;
+    margin-top: 500px;
     margin-bottom: 10px;
     padding-bottom: 20px;
   }
@@ -241,5 +241,13 @@ input:checked + .slider:before {
     height: fit-content;
     padding-bottom: 20px;
     padding-top: 20px;
+  }
+}
+@media only screen and (max-height: 1000px) {
+  .coder {
+    margin-top: 10px;
+  }
+  .coder1 {
+    margin-top: 510px;
   }
 }
