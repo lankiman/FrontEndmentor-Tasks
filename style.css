@@ -55,12 +55,11 @@ body {
   background: var(--darkthemeBG);
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 .pageContents {
-  margin-top: 30px;
+  margin-top: 70px;
   height: 80%;
   padding: 2px;
   padding-bottom: 10px;
@@ -82,13 +81,14 @@ body {
   justify-content: space-between;
 }
 .overviewGrid {
+  margin-top: -15px;
   width: 100%;
   display: grid;
   height: fit-content;
   grid-template-rows: repeat(2, 22%);
 }
 .overviewcards {
-  margin-top: -10px;
+  margin-top: -5px;
   display: grid;
   grid-row-gap: 40px;
   grid-template-columns: repeat(4, 22%);
@@ -143,7 +143,7 @@ input:checked + .slider:before {
   transform: translateX(16px);
 }
 .coder {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .coder1 {
   display: none;
@@ -165,7 +165,7 @@ input:checked + .slider:before {
   }
   .coder1 {
     display: block;
-    margin-top: 500px;
+    margin-top: 550px;
     margin-bottom: 10px;
     padding-bottom: 20px;
   }
@@ -189,7 +189,7 @@ input:checked + .slider:before {
   }
   .FirstCard {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: -70px;
   }
   .FirstCardGroup {
     display: flex;
@@ -229,12 +229,11 @@ input:checked + .slider:before {
   }
   .overviewGrid {
     height: 90%;
-    margin-top: -75px;
   }
   .overviewcards {
-    margin-top: -25px;
     display: block;
     height: 90%;
+    margin-top: 200px;
   }
   .cardstyle {
     margin-bottom: 10px;
@@ -243,25 +242,72 @@ input:checked + .slider:before {
     padding-top: 20px;
   }
 }
-@media only screen and (max-height: 1000px) {
+@media only screen and (max-height: 650px) {
   .coder {
-    margin-top: 10px;
-  }
-  .coder1 {
-    margin-top: 510px;
-  }
-}
-@media only screen and (min-height: 400px) {
-  .coder1 {
-    margin-top: 230px;
+    margin-top: -30px;
   }
   .overviewGrid {
-    margin-top: -60px;
+    margin-top: -10px;
   }
   .overviewcards {
-    margin-top: -85px;
+    margin-top: -5px;
   }
   .pageContents {
     margin-top: 10px;
+  }
+}
+@media only screen and (max-height: 540px) {
+  body {
+    overflow: visible;
+  }
+  .coder {
+    margin-top: 60px;
+  }
+  .overviewGrid {
+    margin-top: 30px;
+  }
+  .overviewcards {
+    margin-top: 2px;
+  }
+  .pageContents {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .overviewGrid {
+    margin-top: 45px;
+  }
+  .overviewcards {
+    margin-top: -20px;
+  }
+  .coder1 {
+    margin-top: 500px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .overviewGrid {
+    margin-top: 1000px;
+  }
+  .overviewcards {
+    margin-top: 1000px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .overviewGrid {
+    margin-top: 50px;
+  }
+  .overviewcards {
+    margin-top: -60px;
+  }
+  .coder1 {
+    margin-top: 290px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .overviewcards {
+    margin-top: -40px;
+  }
+  .coder1 {
+    margin-top: 400px;
   }
 }
