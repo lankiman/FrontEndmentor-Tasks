@@ -244,7 +244,7 @@ input:checked + .slider:before {
 }
 @media only screen and (max-height: 650px) {
   .coder {
-    margin-top: -30px;
+    margin-top: -50px;
   }
   .overviewGrid {
     margin-top: -10px;
@@ -253,7 +253,7 @@ input:checked + .slider:before {
     margin-top: -5px;
   }
   .pageContents {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 @media only screen and (max-height: 540px) {
@@ -305,6 +305,17 @@ input:checked + .slider:before {
   }
   .coder1 {
     margin-top: 290px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .overviewGrid {
+    margin-top: 70px;
+  }
+  .overviewcards {
+    margin-top: -80px;
+  }
+  .coder1 {
+    margin-top: 130px;
   }
 }
 @media only screen and (max-width: 380px) {
