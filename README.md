@@ -1,7 +1,7 @@
 # Frontend Mentor - Social media dashboard with theme switcher solution
 
 ## Overview
-The Solutin is still ongoing and has not been comepleted
+Complete Solution of Frontend Mentor Social Media Dashboard Challenge
 ### The challenge
 
 Users should be able to:
@@ -12,7 +12,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://lankiman.github.io/FrontEndmentor-Tasks/
 
 ## My process
 

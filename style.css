@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 :root {
   --darkthemeBG: linear-gradient(
-    hsl(232, 19%, 15%) 25%,
+    hsl(232, 19%, 15%) 30%,
     0%,
-    hsl(230, 17%, 14%) 80%
+    hsl(230, 17%, 14%) 70%
   );
   --darkThemeTXT: hsl(0, 0%, 100%);
   --darkThemeFFtxt: hsl(228, 34%, 66%);
@@ -22,18 +22,29 @@
   --youtube: hsl(348, 97%, 39%);
   --twitter: hsl(203, 89%, 53%);
   --instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --darkthemeBg2: linear-gradient(
+    hsl(232, 19%, 15%) 40%,
+    0%,
+    hsl(230, 17%, 14%) 60%
+  );
 }
 [data-theme="light"] {
   --darkthemeBG: linear-gradient(
-    hsl(225, 100%, 98%) 25%,
+    hsl(225, 100%, 98%) 30%,
     0%,
-    hsl(0, 0%, 100%) 80%
+    hsl(0, 0%, 100%) 70%
+  );
+  --darkthemeBg2: linear-gradient(
+    hsl(225, 100%, 98%) 40%,
+    0%,
+    hsl(0, 0%, 100%) 60%
   );
   --darkThemeTXT: hsl(230, 17%, 14%);
   --darkThemeFFtxt: hsl(228, 12%, 44%);
   --darkThemeCardBG: hsl(227, 47%, 96%);
   --darkThemeSliderRound: white;
   --hovercolour: hsl(237, 51%, 92%);
+  --darkThemeSlider: var(--darkThemeFFtxt);
 }
 body {
   overflow: hidden;
@@ -42,35 +53,49 @@ body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   background: var(--darkthemeBG);
-}
-.pageContents {
-  display: block;
-  height: 85%;
-  width: 80%;
-  margin: auto;
-  margin-top: 40px;
-}
-.CardHeadings {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
-}
-.headingtext {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-p {
-  font-weight: 700;
-  color: var(--darkThemeTXT);
-  margin-bottom: 0px;
-  margin-top: 0px;
+.pageContents {
+  margin-top: 30px;
+  height: 80%;
+  padding: 2px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-row-gap: 10px;
+  width: 80%;
 }
-.totalFolow {
-  color: var(--darkThemeFFtxt);
-  font-size: 11px;
-  margin-top: 5px;
+.layoutwrapper {
+  display: grid;
+  grid-row-gap: 80px;
+  height: 100%;
+  grid-template-rows: 25% 30%;
+}
+.FirstCardGroup {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  justify-content: space-between;
+}
+.overviewGrid {
+  width: 100%;
+  display: grid;
+  height: fit-content;
+  grid-template-rows: repeat(2, 22%);
+}
+.overviewcards {
+  margin-top: -10px;
+  display: grid;
+  grid-row-gap: 40px;
+  grid-template-columns: repeat(4, 22%);
+  grid-template-rows: repeat(2, 25%);
+  justify-content: space-between;
+  text-align: center;
+  height: fit-content;
 }
 .switchText {
   color: var(--darkThemeFFtxt);
@@ -116,4 +141,105 @@ p {
 }
 input:checked + .slider:before {
   transform: translateX(16px);
+}
+.coder {
+  margin-top: 30px;
+}
+.coder1 {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  html {
+    height: 100vh;
+  }
+  body {
+    min-height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: var(--darkthemeBg2);
+    overflow: visible;
+  }
+  .coder {
+    display: none;
+  }
+  .coder1 {
+    display: block;
+    margin-top: 520px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+  }
+  .pageContents {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+  }
+  .layoutwrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+  }
+  .FirstCard {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .FirstCardGroup {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    gap: 10px;
+  }
+  .ViewCards {
+    width: 100%;
+  }
+  .theme-switch-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .HeaderWrapper {
+    align-items: left;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .CardHeadings {
+    display: block;
+  }
+  .line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 1px;
+    background: var(--darkThemeFFtxt);
+  }
+  .QuerytotalFollow {
+    margin-top: -1px;
+  }
+  .overviewGrid {
+    height: 90%;
+    margin-top: -75px;
+  }
+  .overviewcards {
+    margin-top: -25px;
+    display: block;
+    height: 90%;
+  }
+  .cardstyle {
+    margin-bottom: 10px;
+    height: fit-content;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
 }
